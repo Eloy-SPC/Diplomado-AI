@@ -17,3 +17,13 @@ estudiantes = [
     {"nombre": "David", "matematicas": 90, "literatura": 88, "ciencia": 91},
     {"nombre": "Eva", "matematicas": 88, "literatura": 76, "ciencia": 85}
 ]
+
+for estudiante in estudiantes:
+    suma_total=estudiante["matematicas"]+ estudiante["literatura"]+ estudiante["ciencia"]
+    promedio= suma_total/3
+    estudiante["promedio"]= promedio
+
+for estudiante in estudiantes:
+    print(f'{estudiante["nombre"]} - Promedio: {estudiante["promedio"]:.2f}')
+
+print(estudiantes)
